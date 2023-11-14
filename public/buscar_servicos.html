@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Serviços</title>
+</head>
+
+<body>
+  <h1>Formulário de Agendamento</h1>
+  <form action="/formulario" method="POST">
+    <label for="nome">Nome do Paciente:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" id="telefone" name="telefone"><br>
+    <label for="data">Data do Agendamento:</label><br>
+    <input type="date" id="data" name="data"><br>
+    <label for="hora">Hora do Agendamento:</label><br>
+    <input type="time" id="hora" name="hora"><br>
+    <label for="servico">Serviço Desejado:</label><br>
+    <select id="servico" name="servico">
+      <option value="Consulta Preventiva">Consulta Preventiva</option>
+      <option value="Limpeza">Limpeza</option>
+      <option value="Restauração">Restauração</option>
+      <option value="Tratamento de Canal">Tratamento de Canal</option>
+      <option value="Cirurgia Simples">Cirurgia Simples</option>
+      <option value="Consulta Inicial">Consulta inicial</option>
+      <option value="Aparelho Dentário">Aparelho Dentário</option>
+      <option value="Manutenção de Aparelho">Manutenção de Aparelho</option>
+      <option value="Tratamento de Cárie">Tratamento de Cárie</option>
+      <option value="Tratamento de Gengiva">Tratamento de Gengiva</option>
+    </select><br>
+    <input type="submit" value="Agendar">
+  </form>
+</body>
+
+</html>
