@@ -1,0 +1,11 @@
+<h1>Detalhes do Paciente</h1>
+<p>Nome: <%= paciente.nome %>
+</p>
+<p>Idade: <%= paciente.idade %>
+</p>
+<p>CPF: <%= paciente.cpf %>
+</p>
+<a href="/alterarpaciente?cpf=<%= paciente.cpf %>">
+  <img src="img/alterar.png" alt="Alterar"></a><span>Alterar</span>
+<a href="/excluirpaciente?cpf=<%= paciente.cpf %>" onclick="return confirm('Tem certeza que deseja excluir este paciente?')">
+  <img src="img/excluir.png" alt="Excluir"></a><span>Excluir</span>
