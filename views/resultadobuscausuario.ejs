@@ -1,0 +1,12 @@
+<title>Resultado da Busca</title>
+<h1>Detalhes do Usuário</h1>
+<p>Login: <%= usuario.login %>
+</p>
+<p>Nome: <%= usuario.nome %>
+</p>
+<p>Perfil: <%= usuario.perfil %>
+</p>
+<a href="/alterarusuario?login=<%= usuario.login %>">
+  <img src="img/alterar.png" alt="Alterar"></a><span>Alterar</span></a>
+<a href="/excluirusuario?login=<%= usuario.login %>" onclick="return confirm('Tem certeza que deseja excluir este usuário?')">
+  <img src="img/excluir.png" alt="Excluir"></a><span>Excluir</span>

@@ -1,4 +1,17 @@
+<title>Home</title>
 <h1>Home TeethMed</h1>
-<p>Cadastre-se ou busque por um paciente:</p>
-<a href="/cadastro">Página de cadastro</a><br>
-<a href="/busca">Página de busca</a>
+<% if (session && session.login) { %>
+  <p>Bem-vindo, <%= session.login %>!</p>
+  <p>Cadastre-se ou busque por um paciente:</p>
+  <a href="/cadastro">Página de cadastrar paciente</a><br>
+  <a href="/busca">Página de buscar paciente</a>
+  <p>Cadastre-se ou busque por um usuário:</p>
+  <a href="/cadastrarusuario">Página de cadastrar usuário</a><br>
+  <a href="/buscarusuario">Página de buscar usuário</a>
+  <% } else { %>
+    <p>Cadastre-se ou busque por um paciente:</p>
+    <a href="/cadastro">Página de cadastrar paciente</a><br>
+    <a href="/busca">Página de buscar paciente</a>
+    <% } if (message) { %>
+      <script>alert('<%= message %>');</script>
+      <% } %>

@@ -1,0 +1,12 @@
+<title>Login</title>
+<h2>Login</h2>
+<form action="/login" method="post">
+  <label for="login">Login:</label><br>
+  <input type="text" id="login" name="login" required><br>
+  <label for="senha">Senha:</label><br>
+  <input type="password" id="senha" name="senha" required><br>
+  <input type="submit" value="Entrar">
+</form>
+<% if (message) { %>
+  <script>alert('<%= message %>');</script>
+  <% } %>
